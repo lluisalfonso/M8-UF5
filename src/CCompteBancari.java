@@ -4,7 +4,7 @@ public class CCompteBancari {
         private int saldo;
         
         private static int seguentCompte = 1234;
-        private static int saldoInicial = 200;
+        private static int saldoInicial = 1000000000;
 
     public CCompteBancari(CPersona propietari) {
         this.numCompte = seguentCompte;
