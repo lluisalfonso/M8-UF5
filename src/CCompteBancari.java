@@ -96,5 +96,10 @@ public class CCompteBancari {
         this.saldo = 0;
         this.propietari = null;
     }
-        
+    
+    public String Saludo2() {
+        return "Saludos";
+    }
+    
+    
 }
