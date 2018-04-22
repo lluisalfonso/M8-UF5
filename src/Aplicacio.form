@@ -34,8 +34,9 @@
                   <Component id="crearCompte" max="32767" attributes="0"/>
                   <Component id="consultarSaldo" alignment="0" max="32767" attributes="0"/>
                   <Component id="extreureDiners" alignment="0" max="32767" attributes="0"/>
+                  <Component id="ingressarDiners" max="32767" attributes="0"/>
               </Group>
-              <EmptySpace pref="29" max="32767" attributes="0"/>
+              <EmptySpace pref="31" max="32767" attributes="0"/>
           </Group>
       </Group>
     </DimensionLayout>
@@ -56,6 +57,8 @@
               <Component id="extreureDiners" min="-2" max="-2" attributes="0"/>
               <EmptySpace max="-2" attributes="0"/>
               <Component id="modificarNum" min="-2" max="-2" attributes="0"/>
+              <EmptySpace max="-2" attributes="0"/>
+              <Component id="ingressarDiners" min="-2" max="-2" attributes="0"/>
               <EmptySpace max="-2" attributes="0"/>
               <Component id="sortir" min="-2" max="-2" attributes="0"/>
               <EmptySpace max="32767" attributes="0"/>
@@ -189,6 +192,14 @@
       </Properties>
       <Events>
         <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="consultarSaldoActionPerformed"/>
+      </Events>
+    </Component>
+    <Component class="javax.swing.JButton" name="ingressarDiners">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Ingressar a un altre compte"/>
+      </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="ingressarDinersActionPerformed"/>
       </Events>
     </Component>
   </SubComponents>

@@ -32,6 +32,7 @@ public class Aplicacio extends javax.swing.JFrame {
         modificarNum = new javax.swing.JButton();
         sortir = new javax.swing.JButton();
         consultarSaldo = new javax.swing.JButton();
+        ingressarDiners = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -112,6 +113,13 @@ public class Aplicacio extends javax.swing.JFrame {
             }
         });
 
+        ingressarDiners.setText("Ingressar a un altre compte");
+        ingressarDiners.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                ingressarDinersActionPerformed(evt);
+            }
+        });
+
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
@@ -126,8 +134,9 @@ public class Aplicacio extends javax.swing.JFrame {
                     .addComponent(modificarCompte, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                     .addComponent(crearCompte, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                     .addComponent(consultarSaldo, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(extreureDiners, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                .addContainerGap(29, Short.MAX_VALUE))
+                    .addComponent(extreureDiners, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(ingressarDiners, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addContainerGap(31, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -146,6 +155,8 @@ public class Aplicacio extends javax.swing.JFrame {
                 .addComponent(extreureDiners, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(modificarNum)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(ingressarDiners)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(sortir, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
@@ -185,6 +196,10 @@ public class Aplicacio extends javax.swing.JFrame {
     private void sortirActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_sortirActionPerformed
         System.exit(0);
     }//GEN-LAST:event_sortirActionPerformed
+
+    private void ingressarDinersActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ingressarDinersActionPerformed
+        new CConsultarSaldo(this).setVisible(true);
+    }//GEN-LAST:event_ingressarDinersActionPerformed
 
     /**
      * @param args the command line arguments
@@ -227,6 +242,7 @@ public class Aplicacio extends javax.swing.JFrame {
     private javax.swing.JButton eliminarCompte;
     private javax.swing.JButton extreureDiners;
     private javax.swing.JButton ingressar;
+    private javax.swing.JButton ingressarDiners;
     private javax.swing.JButton modificarCompte;
     private javax.swing.JButton modificarNum;
     private javax.swing.JButton sortir;
