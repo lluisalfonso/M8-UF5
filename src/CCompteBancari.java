@@ -100,6 +100,4 @@ public class CCompteBancari {
     public String Saludo2() {
         return "Saludos";
     }
-    
-    
 }
